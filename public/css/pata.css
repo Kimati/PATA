@@ -1,0 +1,235 @@
+.form-group{
+	padding-top:5px;
+}
+#regdiv1{
+      background-color:green;
+      line-height: 90px;
+}
+h1{
+	text-align: center;
+}
+.nav1{
+	background-color:aqua;
+	margin-left: 400px;
+	border-radius: 0.5em;
+}
+#logdiv1{
+	background-color:green;
+      line-height: 90px;
+}
+.hombutt{
+	border-radius: 0.5em;
+	background-color:red;
+	width: 150px;
+}
+#profnav{
+	background-color:grey;
+	margin-left:400px;
+	width:400px;
+	padding-left:200px;
+	padding-bottom: 200px;
+}
+.user_delete{
+	background-color:green;
+}
+.admheader{
+	background-color: blue;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+.admpost{
+	margin-left: 400px;
+	border-style: solid;
+	border-radius: 5px;
+	width:600px;
+	height: 500px;
+}
+.ad1{
+	margin-top:10px;
+}
+.admsubmit{
+	background-color:green;
+	margin-right: 450px;
+
+}
+.success{
+	
+	background-color:aqua;
+	border-style: solid;
+	border-radius: 5px; 
+	margin-left: 400px;
+	line-height: 50px;
+	width:600px;
+
+}
+a{
+	text-decoration: none;
+}
+.error{
+	background-color: white;
+	border-style:dashed;
+	width:100px;
+	margin-left:400px;
+}
+.ch1{
+	color: red;
+}
+header{
+	text-align: center;
+}
+
+.header{
+	text-align:center;
+}
+.brand_item{
+	display:inline;
+}
+.logo_item{
+	display:inline;
+}
+#pata_body{
+	background-color: lightgrey;
+}
+
+.item{
+	background-color: gold;
+	display:inline-block;
+	border-style: solid;
+	border-color: white;
+	height: 350px;
+	width:23%;
+	margin-left: 2px;
+	padding-top: 3px;
+
+}
+S
+
+#div1
+		{
+			line-height: 80px;
+			background-color: aqua;
+		}
+
+#div2{
+			margin-left: 15%;
+			background-color: gold;
+			border-style: solid;
+			border-color: aqua;
+			border-radius: 15px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			width: 60%;
+		}
+
+#pata_header{
+	height: 100px;
+	background-color: aqua;
+}
+li.header_element{
+	list-style-type: none;
+	display:inline-block;
+	margin-left: 50px;
+	
+}
+#header_div{
+	margin-left:800px; 
+	background-color: aqua;
+}
+div.my_item{
+	display: inline-block;
+}
+ul.ul_div{
+  
+}
+ul.my_item{
+	display: inline-block;
+	padding-top: 0px;
+}
+
+li{
+	list-style-type: none;
+}
+#pata_nav_menu{
+	background-color: grey;
+	min-height: 300px;
+}
+.nav_menu_div{
+	margin-right: 200px;
+	display: inline-block;
+	margin-top: 3px;
+}
+
+footer{
+	padding-bottom:0px;
+	text-align: center;
+	color:aqua;
+}
+.enquiry_form{
+	margin-left: 400px;
+}
+.thanks-container{
+	max-height: 40px;
+	background-color: aqua;
+	font-weight: bold;
+}
+nav#sell_option{
+	margin-left: 300px;
+}
+#option{
+	background-color: grey;
+	border-radius: 10px;
+	width: 400px;
+	max-height: 40px
+	margin-top:5px;
+}
+#option p{
+	font-size: 30px;
+	color:black;
+	font-weight: bold;
+}
+
+#menu{
+	display: flex;
+	justify-content: space-between;
+	background-color: grey;
+}
+#info-option{
+	font-weight: bold;
+}
+#sell-head{
+	max-height: 100px;
+	background-color: gold;
+}
+#sell-head-items{
+	position: absolute;
+}
+#sell-head ul{
+	margin-left: 200px;
+}
+#sell-head ul li{
+	display: inline-block;
+	margin-left: 200px;
+}
+
+#productreq_form{
+	border-radius: 10px;
+	border-style:solid;
+	background-color: orange;
+	margin-left: 20%;
+	width:60%;
+}
+
+
+.container{
+	margin-left: 30%;
+	
+}
+
+.py-4{
+	background-color: aqua;
+	width:60%;
+	margin-left: 20%;
+	border-radius:10px;
+}
+
