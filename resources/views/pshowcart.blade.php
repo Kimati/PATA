@@ -34,7 +34,7 @@
     
     <tr>
       
-      <td><img src="{{asset('uploadedimages/' . $item->image)}}" height="200px" width="150px" ></td>
+      <td><img src="{{asset('uploadedimages/' . $item->id)}}" height="200px" width="150px" ></td>
       <td>
       	{{$item->name}}
       </td>

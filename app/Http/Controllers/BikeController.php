@@ -169,4 +169,49 @@ class BikeController extends Controller
 
    }
 
+public function allBikes()
+{
+ $approvedBikes = Bike::all()->toArray();
+
+ return view('approvedbikes', compact('approvedBikes',$approvedBikes));
+}
+
+public function changeStatus($status)
+{
+$bikeid = $status;
+$inStore = "In store";
+$outStore = "Out Store";
+//$targetbike = Bike::where('id', 'like', '%'.$bikeid.'%')->get();
+$targetbike = Bike::find($bikeid);
+
+if($targetbike)
+{
+    if($targetbike->status == $outStore)
+    {
+        $targetbike->status = $inStore;
+        $targetbike->save();
+    }
+    elseif($targetbike->status == $inStore)
+    {
+        $targetbike->status = $outStore;
+        $targetbike->save();
+    }
+    else
+    {
+       $targetbike->status = $outStore;
+       $targetbike->save();
+    }
+
+}
+return redirect('/handleBikes');
+
+}
+
+
+public function deleteBike($deletebikeid)
+{
+    Bike::where('id',$deletebikeid)->delete();
+    return redirect('/handleBikes');
+}
+
 }

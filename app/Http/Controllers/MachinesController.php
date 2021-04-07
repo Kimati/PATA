@@ -163,6 +163,53 @@ class MachinesController extends Controller
         $prodrequest->save();
         return redirect('/Homeretrieve')->with("requestPlaced","Machine Request was placed successfully. PATA is for you.");
 
-
     }
+
+
+    //Handling Machines by admin
+
+    public function allMachines()
+    {
+        $approvedMachines = Machine::all()->toArray();
+        return view('approvedmachines',compact('approvedMachines', $approvedMachines));
+    }
+
+
+    //Change Machine Status
+public function changeStatus($status)
+{
+$machineid = $status;
+$inStore = "In store";
+$outStore = "Out Store";
+//$targetbike = Bike::where('id', 'like', '%'.$bikeid.'%')->get();
+$targetmachine = Machine::find($machineid);
+
+if($targetmachine)
+{
+    if($targetmachine->status == $outStore)
+    {
+        $targetmachine->status = $inStore;
+        $targetmachine->save();
+    }
+    elseif($targetmachine->status == $inStore)
+    {
+        $targetmachine->status = $outStore;
+        $targetmachine->save();
+    }
+    else
+    {
+       $targetmachine->status = $outStore;
+       $targetmachine->save();
+    }
+
+}
+return redirect('/handleMachines');
+
+}
+
+public function deleteMachine($deletemachineid)
+{
+    Machine::where('id',$deletemachineid)->delete();
+    return redirect('/handleMachine');
+}
 }

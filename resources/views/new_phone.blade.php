@@ -27,7 +27,7 @@
             {{$message}}
 	   </div>
 	   @endif
-		<div id="div2">
+		<div id="prod_upload_container">
 		
     {!! Form::open(['url'=>'/newphone_store','enctype'=>'multipart/form-data']) !!}
 

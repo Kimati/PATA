@@ -145,3 +145,25 @@ Route::post('/bikereq_store', ['uses'=>'BikeController@reqBikeStore', 'as'=>'req
 Route::get('/Request-Machine/{mid}/{mname}', ['uses'=>'MachinesController@reqMachine', 'as'=>'requestMachine']);
 Route::post('/machinereq_store', ['uses'=>'MachinesController@reqMachineStore', 'as'=>'requestMachineStore']);
 
+//Admin routes to handle Bikes
+Route::get('/handleBikes', ['uses'=>'BikeController@allBikes', 'as'=>'handleBikes']);
+Route::get('/bike-status/{status}', ['uses' => 'BikeController@changeStatus', 'as'=>'changebikestatus']);
+Route::get('/bike-delete/{deletebikeid}',['uses'=>'BikeController@deleteBike', 'as'=>'deletebike']);
+
+//Admin routes to handle Phones
+Route::get('/handlePhones', ['uses'=>'PhonesController@allPhones', 'as'=>'handlePhones']);
+Route::get('/phone-status/{status}', ['uses' => 'PhonesController@changeStatus', 'as'=>'changephonestatus']);
+Route::get('/phone-delete/{deletephoneid}',['uses'=>'PhonesController@deletePhone', 'as'=>'deletephone']);
+
+//Admin routes to handle Wearables
+Route::get('/handleWearables', ['uses'=>'WearablesController@allWearables', 'as'=>'handleWearables']);
+Route::get('/wearable-status/{status}', ['uses' => 'WearablesController@changeStatus', 'as'=>'changewearablestatus']);
+Route::get('/wearable-delete/{deletewearableid}',['uses'=>'WearablesController@deleteWearable', 'as'=>'deletewearable']);
+
+//Admin routes to handle Machines
+Route::get('/handleMachines', ['uses'=>'MachinesController@allMachines', 'as'=>'handleMachines']);
+Route::get('/machine-status/{status}', ['uses' => 'MachinesController@changeStatus', 'as'=>'changemachinestatus']);
+Route::get('/machine-delete/{deletemachineid}',['uses'=>'MachinesController@deleteMachine', 'as'=>'deletemachine']);
+
+Route::get('/arrangeTable',['uses'=>'AdminUploadController@arrangeTable']);
+Route::post('/arrange-Rows',['uses'=>'AdminUploadController@arrangeRows']);

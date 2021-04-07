@@ -81,4 +81,23 @@ class AdminUploadController extends Controller
     {
         //
     }
+
+    public function arrangeTable()
+    {
+        return view('arrangetable');
+    }
+
+    public function arrangeRows(Request $request)
+    {
+     $tableName = $request->tablename;
+
+    //SET @num :=0;
+
+    //UPDATE $tableName SET id = @num := (@num+1);
+
+    //ALTER TABLE $tableName AUTO_INCREMENT = 1;
+
+    return redirect('admpanel');
+
+    }
 }

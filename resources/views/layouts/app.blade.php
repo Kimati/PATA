@@ -19,6 +19,20 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('css/pata.css')}}">
+    <style type="text/css">
+
+        @media (max-width:430px)
+        {
+            .py-4{
+    background-color: aqua;
+    width:100%;
+    margin-left: 0px;
+    
+}
+        }
+        
+
+    </style>
 </head>
 <body>
     <div id="pata_reg">

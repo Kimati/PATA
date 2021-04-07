@@ -38,7 +38,7 @@ include('includes/navbar.php');
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{url('admn_upload_bike')}}">BIKES</a></div>
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{url('handleBikes')}}">BIKES</a></div>
             </div>
             <div class="col-auto">
               <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -54,7 +54,7 @@ include('includes/navbar.php');
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{url('compasion')}}">PHONES</a></div>
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{url('handlePhones')}}">PHONES</a></div>
             </div>
             <div class="col-auto">
               <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -70,7 +70,7 @@ include('includes/navbar.php');
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{url('compasionlistadmin')}}">WEARABLES</a></div>
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="{{url('handleWearables')}}">WEARABLES</a></div>
             </div>chrome
             <div class="col-auto">
               <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -86,7 +86,7 @@ include('includes/navbar.php');
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">MACHINES</div>
+              <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a href="{{url('handleMachines')}}">MACHINES</a></div>
               <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
             </div>
             <div class="col-auto">
@@ -125,7 +125,7 @@ include('includes/navbar.php');
         <div class="card-body">
           <div class="row no-gutters align-items-center">
             <div class="col mr-2">
-              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"><a href="{{url('retrieveadverts')}}">OTHERS</a></div>
+              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"><a href="{{url('arrangeTable')}}">ARRANGE TABLE</a></div>
             </div>
             <div class="col-auto">
               <i class="fas fa-comments fa-2x text-gray-300"></i>

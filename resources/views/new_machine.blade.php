@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div id="div1">
-		<header>SELL MACHINE NOW</header>
+		
 		<button class="hombutt" style="background-color:red"><a href="{{url('Homeretrieve')}}">HOME</a></button>
 
 	</div>
@@ -17,7 +17,7 @@
             {{$message}}
 	   </div>
 	   @endif
-		<div id="div2">
+		<div id="prod_upload_container">
 		
     {!! Form::open(['url'=>'/newmachine_store','enctype'=>'multipart/form-data','files'=>true]) !!}
 

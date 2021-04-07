@@ -167,4 +167,51 @@ class WearablesController extends Controller
 
     }
 
+    //Handling Wearables by admin
+
+    public function allWearables()
+    {
+        $approvedWearables = Wearable::all()->toArray();
+        return view('approvedwearables',compact('approvedWearables', $approvedWearables));
+    }
+
+
+    //Change Phone Status
+public function changeStatus($status)
+{
+$wearableid = $status;
+$inStore = "In store";
+$outStore = "Out Store";
+//$targetbike = Bike::where('id', 'like', '%'.$bikeid.'%')->get();
+$targetwearable = Wearable::find($wearableid);
+
+if($targetwearable)
+{
+    if($targetwearable->status == $outStore)
+    {
+        $targetwearable->status = $inStore;
+        $targetwearable->save();
+    }
+    elseif($targetwearable->status == $inStore)
+    {
+        $targetwearable->status = $outStore;
+        $targetwearable->save();
+    }
+    else
+    {
+       $targetwearable->status = $outStore;
+       $targetwearable->save();
+    }
+
+}
+return redirect('/handleWearables');
+
+}
+
+public function deleteWearable($deletewearableid)
+{
+    Wearable::where('id',$deletewearableid)->delete();
+    return redirect('/handleWearables');
+}
+
 }

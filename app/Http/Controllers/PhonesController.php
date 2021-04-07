@@ -162,4 +162,52 @@ class PhonesController extends Controller
 
 
     }
+
+
+//Handling phones by admin
+
+    public function allPhones()
+    {
+        $approvedPhones = Phone::all()->toArray();
+        return view('approvedphones',compact('approvedPhones', $approvedPhones));
+    }
+
+
+    //Change Phone Status
+public function changeStatus($status)
+{
+$phoneid = $status;
+$inStore = "In store";
+$outStore = "Out Store";
+//$targetbike = Bike::where('id', 'like', '%'.$bikeid.'%')->get();
+$targetphone = Phone::find($phoneid);
+
+if($targetphone)
+{
+    if($targetphone->status == $outStore)
+    {
+        $targetphone->status = $inStore;
+        $targetphone->save();
+    }
+    elseif($targetphone->status == $inStore)
+    {
+        $targetphone->status = $outStore;
+        $targetphone->save();
+    }
+    else
+    {
+       $targetphone->status = $outStore;
+       $targetphone->save();
+    }
+
+}
+return redirect('/handlePhones');
+
+}
+
+public function deletePhone($deletephoneid)
+{
+    Phone::where('id',$deletephoneid)->delete();
+    return redirect('/handlePhones');
+}
 }

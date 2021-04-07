@@ -97,13 +97,13 @@ header{
 	display:inline-block;
 	border-style: solid;
 	border-color: white;
-	height: 350px;
+	
 	width:23%;
 	margin-left: 2px;
 	padding-top: 3px;
 
 }
-S
+
 
 #div1
 		{
@@ -111,7 +111,7 @@ S
 			background-color: aqua;
 		}
 
-#div2{
+#prod_upload_container{
 			margin-left: 15%;
 			background-color: gold;
 			border-style: solid;
@@ -126,16 +126,14 @@ S
 	height: 100px;
 	background-color: aqua;
 }
+
 li.header_element{
 	list-style-type: none;
 	display:inline-block;
 	margin-left: 50px;
 	
 }
-#header_div{
-	margin-left:800px; 
-	background-color: aqua;
-}
+
 div.my_item{
 	display: inline-block;
 }
@@ -153,6 +151,7 @@ li{
 #pata_nav_menu{
 	background-color: grey;
 	min-height: 300px;
+	display: flex;
 }
 .nav_menu_div{
 	margin-right: 200px;
@@ -206,9 +205,9 @@ nav#sell_option{
 }
 #sell-head ul{
 	margin-left: 200px;
+	display: flex;
 }
 #sell-head ul li{
-	display: inline-block;
 	margin-left: 200px;
 }
 
@@ -232,4 +231,19 @@ nav#sell_option{
 	margin-left: 20%;
 	border-radius:10px;
 }
+
+
+ @media (max-width: 400px)
+     {
+     	#prod_upload_container{
+			margin-left: 5%;
+			background-color: gold;
+			border-style: solid;
+			border-color: aqua;
+			border-radius: 15px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			width: 80%;
+		}
+     }
 

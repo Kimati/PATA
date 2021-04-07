@@ -4,6 +4,34 @@
 	<title>Sell On PATA</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/pata.css')}}">
+
+	<style type="text/css">
+		@media (max-width: 745px)
+		{
+            nav#sell_option{
+
+	             margin-left: 5px;
+
+                  }
+
+                  #sell-head ul{
+                  	flex-direction: column;
+                  	margin-left: 0px;
+                  }
+                  #sell-head ul li{
+                  	margin-left: 10px;
+                  	
+                  }
+		}
+
+		@media (max-width: 400px)
+		{
+			#option{
+				width: 200px;
+			}
+		}
+
+	</style>
 </head>
 <body>
 	<div  id="sell-head">
