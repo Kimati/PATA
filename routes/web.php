@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
   //  return view('PATA');
 //});
 
-Route::view('/', 'PATA');
+Route::get('/', ['uses'=>'HomeController@index']);
 
 Route::view('/Homeretrieve', 'PATA');
 
