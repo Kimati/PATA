@@ -26,7 +26,7 @@ class Bikes extends Migration
             $table->string('subcounty');
             $table->string('division');
             $table->string('location');
-            $table->file('image');
+            $table->string('image');
             //$table->string('email')->unique();
             $table->timestamp('product_verified_at')->nullable();
             //$table->string('password');
