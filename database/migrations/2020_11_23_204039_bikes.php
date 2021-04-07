@@ -17,7 +17,6 @@ class Bikes extends Migration
         //
         Schema::create('bikes', function (Blueprint $table) {
            $table->increments('id');
-           // $table->id()->startingValue(1);
             $table->string('name');
             $table->float('price',8,2);
             $table->string('seller_phone');
@@ -34,8 +33,6 @@ class Bikes extends Migration
             $table->timestamps();
             //$table->image('phone_photo');
         });
-
-        DB::statement("ALTER TABLE bikes AUTO_INCREMENT = 1;");
 
     }
 
