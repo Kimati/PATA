@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
   //  return view('PATA');
 //});
 
+Route::view('/', 'PATA');
+
 Route::view('/Homeretrieve', 'PATA');
 
 /*Route::get('/welcome', function(){
